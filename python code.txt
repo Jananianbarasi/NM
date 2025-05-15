@@ -1,0 +1,20 @@
+print("🤖 AV Weather Detection Chatbot")
+print("Type one of: snow, rain, fog, or low-light")
+print("Type 'exit' to quit.\n")
+
+while True:
+    user_input = input("You: ").strip().lower()
+
+    if user_input == 'exit':
+        print("Bot: Goodbye! 👋")
+        break
+    elif 'snow' in user_input:
+        print("Bot: ❄ Snow Level: Temperature is -3°C")
+    elif 'fog' in user_input:
+        print("Bot: 🌁 Fog Present: Oxygen concentration is 19.2%")
+    elif 'rain' in user_input:
+        print("Bot: 🌧 Rain Detected: Visibility is reduced to 200m")
+    elif 'low-light' in user_input or 'lowlight' in user_input:
+        print("Bot: 💡 Low-Light Condition: Headlights activated")
+    else:
+        print("Bot: ❓ I didn't understand that. Please type snow, rain, fog, or low-light.")
